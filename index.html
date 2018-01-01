@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="slick-1.8.0/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.0/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+   
+  
+    <script src="slick-1.8.0/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<body onload="myFunction()">
+<div id="loader"></div>
+ <div style="display:none;" id="myDiv" class="animate-bottom" >
+  <div class="container-fluid" id="topic">
+<!-- nav + navbar-->
+      <div class="row pt-1" id="topicSocial">
+          <div class="col-lg-6 col-md-7  col-sm-2 col-xs-2 text-left" id="socialInfo"><span class="fa fa-envelope"></span><a href="mailto:foodisgood@gmail.com">foodisgood@gmail.com</a></div>
+          <div class="col-lg-6 col-md-5  col-sm-10 " id="socialApp">
+             
+              <span class="text-info font-weight-bold">趕快揪上你的食友</span>
+               <span class="fa fa-twitter-square"></span>
+               <span class="fa fa-facebook-square"></span>
+               <span class="fa fa-instagram"></span>
+               <span class="fa fa-weixin"></span>
+          </div>
+      </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <a class="navbar-brand" href="#"><img src="logo.png" alt=""><span class="pl-2">大堡一餐</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse"  id="navbarSupportedContent" >
+    <ul class="navbar-nav ml-auto " >
+      <li class="nav-item active pr-3 mt-1 ">
+        <a class="btn btn-primary btn-block " href="#" >HOME <br>大堡一餐 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item  dropdown pr-3">
+        <a class="btn btn-primary dropdown-toggle pl-4 pr-4 btn-block mt-1" href="#" data-toggle="dropdown" id="nav-menu">MENU <br>精選菜單</a>
+        <div class="dropdown-menu " >
+          <a class="dropdown-header"><i>超值精選套餐</i></a>
+          <a class="dropdown-item dropdown-p" href="#">狂歡套餐</a>
+          <a class="dropdown-item dropdown-p" href="#">情侶套餐</a>
+          <a class="dropdown-item dropdown-p" href="#">單身狗套餐</a>
+          <a class="dropdown-header"><i>CP值爆表</i></a>
+          <a class="dropdown-item dropdown-p" href="#">美式漢堡</a>
+          <a class="dropdown-item dropdown-p" href="#">美式脆薯</a>
+          <a class="dropdown-item dropdown-p" href="#">戰斧牛排</a>
+        </div>
+      </li>
+      
+      <li class="nav-item  dropdown pr-3">
+        <a class="btn btn-primary dropdown-toggle pl-4 pr-4 btn-block mt-1  " href="#" data-toggle="dropdown" id="nav-news">NEWS <br>最新消息</a>
+        <div class="dropdown-menu " >
+          <a class="dropdown-header"><i>優惠大放送</i></a>
+          <a class="dropdown-item dropdown-p" href="#">超狂優惠</a>
+          <a class="dropdown-item dropdown-p" href="#">當月限定</a>
+          <a class="dropdown-header"><span class="fa fa-map-marker fa-2x"></span>分店資訊</a>
+          <a class="dropdown-item dropdown-p" href="#">西子灣店</a>
+          <a class="dropdown-item dropdown-p" href="#">世貿店</a>
+        </div>
+      </li>
+      
+      <li class="nav-item  dropdown pr-3 " >
+        <a class="btn btn-primary dropdown-toggle pl-4 pr-4 btn-block mt-1" href="#" data-toggle="dropdown" >ABOUT <br>關於我們</a>
+        <div class="dropdown-menu " >
+            <a class="dropdown-header">愛吃理念</a>
+          <a class="dropdown-item dropdown-p" href="#"> 開店宗旨</a>
+          <a class="dropdown-item dropdown-p" href="#"> 加盟專區</a>
+          <a class="dropdown-header"><span class="fa fa-spoon fa-2x"></span>愛吃又愛做的師傅</a>
+          <a class="dropdown-item dropdown-p" href="#">愛吃的師傅們</a>
+          <a class="dropdown-item dropdown-p" href="#"> 貼心的小幫手們</a>
+        </div>
+      </li>
+      <li class="nav-item  dropdown pr-3 " >
+        <a class="btn btn-primary dropdown-toggle pl-4 pr-4 btn-block mt-1" href="#" data-toggle="dropdown" >
+FOODIE <br>饕客專屬</a>
+        <div class="dropdown-menu " >
+        <a class="dropdown-header "><span class="fa fa-user-circle fa-2x"></span>饕客專區</a>
+          <a class="dropdown-item dropdown-p" href="#"> 饕客登入</a>
+          <a class="dropdown-item dropdown-p" href="#"> 饕客註冊</a>
+          <a class="dropdown-header"><span class="fa fa-commenting-o fa-2x"></span>饕客建議</a>
+          <a class="dropdown-item dropdown-p" href="#">期待信箱</a>
+          <a class="dropdown-item dropdown-p" href="#">聯絡我們</a>
+        </div>
+      </li>
+    </ul>  
+  </div>
+</nav>
+<!--title banner-->
+<div class="jumbotron jumbotron-fluid d-flex align-items-center">
+  <div class="container   text-center ">
+    <h2 > 大堡一餐</h2>
+    <p ><b>2017年票選十大令人食指大動的餐廳</b></p>
+  </div>
+</div>
+ </div>
+<!-- content-->
+ <div class="container-fluid pt-5" id="content">
+    <div class="row no-gutters">
+        <div class="col-md-12 text-center pt-4 pb-md-5">
+      
+            <h1 class="line">美味搶先看</h1>
+        </div>
+    </div>
+     <div class="row pb-4">
+         <div class="col-md-6 slider  m-auto">
+             <div class="slider-photo " >
+                 <img src="img/slider-4.jpg" alt="" >
+             </div>
+            <div class="slider-photo ">
+                 <img src="img/slider-2.png" alt="">
+             </div>
+            <div class="slider-photo ">
+                 <img src="img/slider-3.png" alt="">
+             </div>
+             
+         </div>
+         <div class="col-md-6 text-center" id="tastyInfo">
+       
+         <h3><b><em>我們都使用有機雞蛋</em></b></h3>
+         <p>有機雞蛋的好處可能是值得的額外成本。<br>他們來自雞，100％的有機飼料<br>沒有任何農藥殘留。雞也被人道對待，進入室外空間漫遊 <br>雞蛋本身含有維持健康所需的必需氨基酸，維生素和礦物質</p>
+         <h3><b><em>比起價錢我們更注重品質</em></b></h3>
+             <p>提供給來店用餐的客人們最新鮮、健康及美味的餐點<br>
+             台灣在地種的新鮮香草以及海鹽料理調味，比起SOP，我們更注重對食物的熱情<br>傳統的口味，Chef給予食物他舌尖、指尖與心靈上的經驗與熱情
+             </p>
+              <h3 class="text-primary"><b>饕客是我們最好的朋友</b></h3>    
+         </div>
+     </div>
+ </div>
+<!-- singer-->
+ <div class="container-fluid pt-5" id="godsound">
+    <div class="row no-gutters">
+        <div class="col-md-12 text-center pt-4 pb-md-5">
+      
+            <h1 class="line">天籟之聲</h1> 
+            <p >除了肚子，我們還能滋潤你的耳朵</p>
+        </div>
+    </div>
+    <div class="row pb-4">
+        <div class="col-md-12" id="singer">
+            <div class="mask"></div>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-md-7 m-auto">
+            <table class="table table-hover table-dark table-responsive-md">
+  <thead>
+    <tr>
+      <th scope="col" id="liner">時間</th>
+      <th scope="col">一</th>
+      <th scope="col">二</th>
+      <th scope="col">三</th>
+      <th scope="col">四</th>
+      <th scope="col">五</th>
+      <th scope="col">六日</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row ">16:00</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>Jacob</td>
+      <td>Jacob</td>
+      <td>fat</td>
+      <td>fat</td>
+    </tr>
+    <tr>
+      <th scope="row">18:00</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>Thornton</td>
+      <td>Larry</td>
+      <td>Larry</td>
+      <td>twitter</td>
+    </tr>
+    <tr>
+      <th scope="row">20:00</th>
+      <td>Larry</td>
+      <td>Larry</td>
+      <td>fat</td>
+      <td>fat</td>
+      <td>Otto</td>
+      <td>Otto</td>
+    </tr> 
+      <tr>
+      <th scope="row">22:00</th>
+      <td>Mark</td>
+      <td>Mark</td>
+      <td>Thornton</td>
+      <td>Jacob</td>
+      <td>Jacob</td>
+      <td>Larry</td>
+    </tr>
+      <tr>
+      <th scope="row">24:00</th>
+      <td>twitter</td>
+      <td>Mark</td>
+      <td>Thornton</td>
+      <td>Thornton</td>
+      <td>Jacob</td>
+      <td>Jacob</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid pt-5" id="map">
+  <div class="row no-gutters">
+        <div class="col-md-12 text-center pt-4 pb-md-5">
+      
+            <h1 class="line">尋找我們</h1> 
+            <p >最近太火紅了，不早點訂位就沒位子啦!!</p>
+        </div>
+    </div>
+   <div class="row pb-5" id="mapinfo">
+       <div class="col-md-6" >
+           <iframe
+              frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14730.757440748139!2d120.25515452808237!3d22.628072462466452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e043955555555%3A0xb766d8bdd2bea5f9!2z6KW_5a2Q54Gj6aKo5pmv5Y2A!5e0!3m2!1szh-TW!2sus!4v1514553482331?key=AIzaSyCAaXOPu3fDTIaMih9vTBQk_8d4iBATvME
+                " allowfullscreen >
+          </iframe>   
+       </div>
+       <div class="col-md-6" id="order">
+        <p>姓名</p>
+        <input type="text" id="name" placeholder="訂位大名">
+        <p>聯絡電話</p>
+        <input type="number" id="phone" placeholder="輸入您的連絡電話">
+        <p>聯絡信箱</p>
+        <input type="email" id="phone" placeholder="輸入您的信箱">
+        <p>訂位人數</p>
+        <input type="number" id="person" placeholder="輸入訂位人數">
+        <div class="submit_button">
+            <button type="submit" class="cancel">取消</button>
+            <button type="submit">送出</button>
+        </div>
+       </div>
+   </div>
+</div>
+<div class="container-fluid ">
+
+    <footer class="row " id="footer_info">
+        <div class="col-md-12 " id="footer_title">
+            <h1 class="line">推薦我們</h1> 
+            <p >我們用心對待每一個客人，我們就像一家人</p>
+            <p>
+            <a href="#"><span class="fa fa-twitter-square fa-5x"></span></a>
+            <a href="#"><span class="fa fa-google-plus-official fa-5x"></span></a>
+            <a href="#"><span class="fa fa-facebook-square fa-5x"></span></a>
+            
+            </p>
+        </div>
+        
+    </footer>
+</div>
+
+
+
+
+
+</div>
+
+<script>
+ 
+    //slick 輪播
+    $(".slider").slick({
+            dots:true,
+            autoplaySpeed:2500,
+            speed:1500,
+            autoplay:true,
+            infinite: true,
+            responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+               
+               arrows: false,
+                slidesToShow: 1
+              }
+            }
+          ]
+        })
+    
+    //起始讀取頁面
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}  
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/*RWD Min-width:800px*/
+   @media screen and (min-width:800px){
+         #socialApp {
+            text-align: right;
+        }
+       
+        .line{
+        position: relative;
+        font-weight: bold;
+    }
+       .line::before{
+        content: "";
+        width: 100px;
+        margin-top: 25px;
+        margin-left: -110px;
+        display: inline-block;
+        border-bottom: 3px solid #DDE0DF;
+        position: absolute;
+    }
+    
+    .line::after{
+        content: "";
+        width: 100px;
+        margin-top: 25px;
+        margin-left: 10px;
+        display: inline-block;
+        border-bottom: 3px solid #DDE0DF;
+        position: absolute;
+    }
+/* tastyInfo*/
+    #tastyInfo p{
+        font-size: 24px;
+      
+    }
+      #tastyInfo h3{
+            padding-top: 20px;
+        }  
+/*godsound*/
+       #godsound p{
+           font-size: 20px;
+           font-weight: bold;
+           color: #DDE0DF;
+       }
+/*table bgimg*/
+           #godsound #singer{
+
+        background-attachment: fixed;
+        background-position: 0 150px;
+
+    }
+       
+       
+     #map p{
+           font-size: 20px;
+           font-weight: bold;
+           color: #DDE0DF;
+       } 
+ }
